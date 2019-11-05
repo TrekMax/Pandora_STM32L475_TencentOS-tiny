@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+OBJ/
+ALIENTEK_Pandora_STM32L475.uvguix.*
