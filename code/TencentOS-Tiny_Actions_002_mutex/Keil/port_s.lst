@@ -231,12 +231,12 @@ ARM Macro Assembler    Page 4
               E000ED08 
               E000ED04 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\obj\port_s.d -o.\obj\port_s.o -I.\RTE\_ALIENTEK_Pandora_STM32
-L475 -ID:\Programs\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -ID:\Pro
-grams\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L4
-xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 
-526" --predefine="_RTE_ SETA 1" --predefine="STM32L475xx SETA 1" --list=port_s.
-lst ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_s.S
+erwork --depend=..\obj\port_s.d -o..\obj\port_s.o -I.\RTE\_ALIENTEK_Pandora_STM
+32L475 -ID:\Programs\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -ID:\P
+rograms\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32
+L4xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SET
+A 526" --predefine="_RTE_ SETA 1" --predefine="STM32L475xx SETA 1" --list=port_
+s.lst ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_s.S
 
 
 
@@ -247,8 +247,8 @@ Relocatable symbols
 
 Symbol: .text
    Definitions
-      At line 25 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 25 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
       None
 Comment: .text unused
@@ -256,20 +256,20 @@ PendSV_Handler 0000008A
 
 Symbol: PendSV_Handler
    Definitions
-      At line 132 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 132 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
    Uses
-      At line 13 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
-      At line 131 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 13 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
+      At line 131 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 _context_restore 000000AE
 
 Symbol: _context_restore
    Definitions
-      At line 158 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 158 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
    Uses
       None
 Comment: _context_restore unused
@@ -277,8 +277,8 @@ _context_save 00000090
 
 Symbol: _context_save
    Definitions
-      At line 136 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 136 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
    Uses
       None
 Comment: _context_save unused
@@ -286,86 +286,86 @@ port_clz 00000016
 
 Symbol: port_clz
    Definitions
-      At line 57 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 57 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 11 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
-      At line 56 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 11 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
+      At line 56 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 port_context_switch 00000076
 
 Symbol: port_context_switch
    Definitions
-      At line 116 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 116 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
    Uses
-      At line 8 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
+      At line 8 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
 
 
 
 ARM Macro Assembler    Page 2 Alphabetic symbol ordering
 Relocatable symbols
 
-_s.S
-      At line 115 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+ort_s.S
+      At line 115 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 port_cpsr_restore 00000010
 
 Symbol: port_cpsr_restore
    Definitions
-      At line 51 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 51 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 5 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 50 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 5 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 50 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 port_cpsr_save 00000008
 
 Symbol: port_cpsr_save
    Definitions
-      At line 44 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 44 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 4 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 43 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 4 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 43 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 port_int_disable 00000000
 
 Symbol: port_int_disable
    Definitions
-      At line 32 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 32 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 1 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 31 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 1 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 31 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 port_int_enable 00000004
 
 Symbol: port_int_enable
    Definitions
-      At line 38 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 38 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 2 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 37 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 2 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 37 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 port_irq_context_switch 00000080
 
 Symbol: port_irq_context_switch
    Definitions
-      At line 124 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 124 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
    Uses
 
 
@@ -373,22 +373,22 @@ rt_s.S
 ARM Macro Assembler    Page 3 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 9 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 123 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 9 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 123 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 port_sched_start 0000001C
 
 Symbol: port_sched_start
    Definitions
-      At line 63 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 63 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 7 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port
-_s.S
-      At line 62 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 7 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\p
+ort_s.S
+      At line 62 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 
 12 symbols
 
@@ -401,55 +401,55 @@ NVIC_INT_CTRL E000ED04
 
 Symbol: NVIC_INT_CTRL
    Definitions
-      At line 19 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 19 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 117 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
-      At line 125 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 117 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
+      At line 125 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 NVIC_PENDSVSET 10000000
 
 Symbol: NVIC_PENDSVSET
    Definitions
-      At line 22 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 22 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 118 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
-      At line 126 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 118 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
+      At line 126 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 NVIC_PENDSV_PRI 000000FF
 
 Symbol: NVIC_PENDSV_PRI
    Definitions
-      At line 21 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 21 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 70 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 70 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 Comment: NVIC_PENDSV_PRI used once
 NVIC_SYSPRI14 E000ED22
 
 Symbol: NVIC_SYSPRI14
    Definitions
-      At line 20 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 20 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 69 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 69 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 Comment: NVIC_SYSPRI14 used once
 SCB_VTOR E000ED08
 
 Symbol: SCB_VTOR
    Definitions
-      At line 18 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 18 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 73 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 73 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
 Comment: SCB_VTOR used once
 5 symbols
 
@@ -462,25 +462,25 @@ k_curr_task 00000000
 
 Symbol: k_curr_task
    Definitions
-      At line 15 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 15 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 79 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
-      At line 153 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 79 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
+      At line 153 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 k_next_task 00000000
 
 Symbol: k_next_task
    Definitions
-      At line 16 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
+      At line 16 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
    Uses
-      At line 80 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\por
-t_s.S
-      At line 160 in file ..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\po
-rt_s.S
+      At line 80 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\
+port_s.S
+      At line 160 in file ..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc
+\port_s.S
 
 2 symbols
 356 symbols in table

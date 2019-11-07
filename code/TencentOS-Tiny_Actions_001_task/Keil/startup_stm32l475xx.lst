@@ -678,12 +678,12 @@ ARM Macro Assembler    Page 11
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\obj\startup_stm32l475xx.d -o.\obj\startup_stm32l475xx.o -I.\R
-TE\_ALIENTEK_Pandora_STM32L475 -ID:\Programs\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\C
-MSIS\Core\Include -ID:\Programs\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.1.0\Drive
-rs\CMSIS\Device\ST\STM32L4xx\Include --predefine="__MICROLIB SETA 1" --predefin
-e="__UVISION_VERSION SETA 526" --predefine="_RTE_ SETA 1" --predefine="STM32L47
-5xx SETA 1" --list=startup_stm32l475xx.lst startup_stm32l475xx.s
+erwork --depend=..\obj\startup_stm32l475xx.d -o..\obj\startup_stm32l475xx.o -I.
+\RTE\_ALIENTEK_Pandora_STM32L475 -ID:\Programs\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0
+\CMSIS\Core\Include -ID:\Programs\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.1.0\Dri
+vers\CMSIS\Device\ST\STM32L4xx\Include --predefine="__MICROLIB SETA 1" --predef
+ine="__UVISION_VERSION SETA 526" --predefine="_RTE_ SETA 1" --predefine="STM32L
+475xx SETA 1" --list=startup_stm32l475xx.lst startup_stm32l475xx.s
 
 
 

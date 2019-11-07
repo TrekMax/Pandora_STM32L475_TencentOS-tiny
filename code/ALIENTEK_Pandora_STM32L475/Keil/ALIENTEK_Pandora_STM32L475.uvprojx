@@ -48,7 +48,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\OBJ\</OutputDirectory>
+          <OutputDirectory>..\OBJ\</OutputDirectory>
           <OutputName>TencentOS_tiny</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32L475xx,USE_HAL_DRIVER,STM32L475xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Drivers\STM32L4xx_HAL_Driver\Inc;..\..\Drivers\STM32L4xx_HAL_Driver\Inc\Legacy;..\..\Drivers\CMSIS\Device\ST\STM32L4xx\Include;..\TencentOS_tiny\osal\cmsis_os;..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc;..\TencentOS_tiny\kernel\core\include;..\TencentOS_tiny\osal\cmsis_os;..\TencentOS_tiny\arch\arm\arm-v7m\common\include;..\TencentOS_tiny\kernel\pm\include;..\TencentOS_tiny\kernel\hal\include;..\TOS-CONFIG;..\BSP\Hardware\LCD;..\BSP\Hardware\SPI3;..\BSP\Inc</IncludePath>
+              <IncludePath>..\..\Drivers\STM32L4xx_HAL_Driver\Inc;..\..\Drivers\STM32L4xx_HAL_Driver\Inc\Legacy;..\..\Drivers\CMSIS\Device\ST\STM32L4xx\Include;..\..\TencentOS_tiny\osal\cmsis_os;..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc;..\..\TencentOS_tiny\kernel\core\include;..\..\TencentOS_tiny\osal\cmsis_os;..\..\TencentOS_tiny\arch\arm\arm-v7m\common\include;..\..\TencentOS_tiny\kernel\pm\include;..\..\TencentOS_tiny\kernel\hal\include;..\TOS-CONFIG;..\BSP\Hardware\LCD;..\BSP\Hardware\SPI3;..\BSP\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -550,17 +550,17 @@
             <File>
               <FileName>port_c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_c.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_c.c</FilePath>
             </File>
             <File>
               <FileName>port_s.S</FileName>
               <FileType>2</FileType>
-              <FilePath>..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_s.S</FilePath>
+              <FilePath>..\..\TencentOS_tiny\arch\arm\arm-v7m\cortex-m4\armcc\port_s.S</FilePath>
             </File>
             <File>
               <FileName>tos_cpu.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\arch\arm\arm-v7m\common\tos_cpu.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\arch\arm\arm-v7m\common\tos_cpu.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -570,122 +570,122 @@
             <File>
               <FileName>tos_event.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_event.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_event.c</FilePath>
             </File>
             <File>
               <FileName>tos_global.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_global.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_global.c</FilePath>
             </File>
             <File>
               <FileName>tos_mmblk.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_mmblk.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_mmblk.c</FilePath>
             </File>
             <File>
               <FileName>tos_mmheap.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_mmheap.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_mmheap.c</FilePath>
             </File>
             <File>
               <FileName>tos_mutex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_mutex.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_mutex.c</FilePath>
             </File>
             <File>
               <FileName>tos_pend.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_pend.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_pend.c</FilePath>
             </File>
             <File>
               <FileName>tos_robin.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_robin.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_robin.c</FilePath>
             </File>
             <File>
               <FileName>tos_sched.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_sched.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_sched.c</FilePath>
             </File>
             <File>
               <FileName>tos_sem.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_sem.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_sem.c</FilePath>
             </File>
             <File>
               <FileName>tos_sys.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_sys.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_sys.c</FilePath>
             </File>
             <File>
               <FileName>tos_task.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_task.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_task.c</FilePath>
             </File>
             <File>
               <FileName>tos_tick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_tick.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_tick.c</FilePath>
             </File>
             <File>
               <FileName>tos_time.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_time.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_time.c</FilePath>
             </File>
             <File>
               <FileName>tos_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_timer.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_timer.c</FilePath>
             </File>
             <File>
               <FileName>tos_binary_heap.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_binary_heap.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_binary_heap.c</FilePath>
             </File>
             <File>
               <FileName>tos_char_fifo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_char_fifo.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_char_fifo.c</FilePath>
             </File>
             <File>
               <FileName>tos_completion.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_completion.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_completion.c</FilePath>
             </File>
             <File>
               <FileName>tos_countdownlatch.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_countdownlatch.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_countdownlatch.c</FilePath>
             </File>
             <File>
               <FileName>tos_mail_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_mail_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_mail_queue.c</FilePath>
             </File>
             <File>
               <FileName>tos_message_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_message_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_message_queue.c</FilePath>
             </File>
             <File>
               <FileName>tos_priority_mail_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_priority_mail_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_priority_mail_queue.c</FilePath>
             </File>
             <File>
               <FileName>tos_priority_message_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_priority_message_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_priority_message_queue.c</FilePath>
             </File>
             <File>
               <FileName>tos_priority_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_priority_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_priority_queue.c</FilePath>
             </File>
             <File>
               <FileName>tos_ring_queue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\kernel\core\tos_ring_queue.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\kernel\core\tos_ring_queue.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -705,7 +705,7 @@
             <File>
               <FileName>cmsis_os.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\TencentOS_tiny\osal\cmsis_os\cmsis_os.c</FilePath>
+              <FilePath>..\..\TencentOS_tiny\osal\cmsis_os\cmsis_os.c</FilePath>
             </File>
           </Files>
         </Group>
