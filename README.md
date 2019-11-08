@@ -13,9 +13,9 @@ TencentOS-tiny 在 ALIENTEK@STM32L4 开发板上运行的学习笔记 &amp;&amp;
 ![](./notes/images/picture/TencentOS_tiny_log.png)
 [官方 Repositories](https://github.com/Tencent/TencentOS-tiny)
 
-TencentOS tiny整体架构
+TencentOS tiny 整体架构
 
-![TencentOS tiny整体架构](./notes/images/picture/TencentOS_tiny_Architecture.png)
+![TencentOS tiny 导图](./notes/images/RTOS.png)
 
 ## TencentOS-tiny 移植 && 内核 API 使用
 
