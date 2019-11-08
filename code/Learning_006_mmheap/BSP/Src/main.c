@@ -62,22 +62,26 @@ void task_entry_mmheap_demo(void *arg)
 {
     void *p = K_NULL, *p_aligned = NULL;
     int i = 0;
+    k_mmheap_info_t info;
     while (K_TRUE)
     {
+        tos_mmheap_check(&info);
+        printf("[%3d|%s] i[%d], mmheap free:%d used:%d\n", __LINE__, __FUNCTION__,
+               i, info.free, info.used);
         switch (i)
         {
         case 1:
             p = tos_mmheap_alloc(0x30);
             if (p != K_NULL)
             {
-                printf("[%d|%s] alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
+                printf("[%3d|%s] p alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
             }
             break;
 
         case 2:
             if (p != K_NULL)
             {
-                printf("[%d|%s] free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
+                printf("[%3d|%s] p free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
                 tos_mmheap_free(p);
             }
             break;
@@ -86,7 +90,7 @@ void task_entry_mmheap_demo(void *arg)
             p = tos_mmheap_alloc(0x30);
             if (p != K_NULL)
             {
-                printf("[%d|%s] alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
+                printf("[%3d|%s] p alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
             }
             break;
 
@@ -94,37 +98,46 @@ void task_entry_mmheap_demo(void *arg)
             p_aligned = tos_mmheap_aligned_alloc(0x50, 16);
             if (p_aligned != K_NULL)
             {
-                printf("[%d|%s] aligned alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
+                printf("[%3d|%s] aligned alloc:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
                 if (((cpu_addr_t)p_aligned % 16) == 0)
                 {
-                    printf("[%d|%s] 0x%x is 16 aligned\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
+                    printf("[%3d|%s] 0x%x is 16 aligned\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
                 }
                 else
                 {
-                    printf("[%d|%s] should not happen\n", __LINE__, __FUNCTION__);
+                    printf("[%3d|%s] should not happen\n", __LINE__, __FUNCTION__);
                 }
             }
             break;
 
         case 5:
+            /* 不对堆内存进行释放,造成内存泄漏 */
+            // if (p != K_NULL)
+            // {
+            //     tos_mmheap_free(p);
+            // }
             p = tos_mmheap_alloc(0x40);
             if (p != K_NULL)
             {
-                printf("[%d|%s] free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
+                printf("[%3d|%s] p free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
             }
             break;
 
         case 6:
             if (p != K_NULL)
             {
-                printf("[%d|%s] free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
+                printf("[%3d|%s] p free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p);
                 tos_mmheap_free(p);
             }
 
             if (p_aligned != K_NULL)
             {
-                printf("[%d|%s] free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
+                printf("[%3d|%s] p_aligned free:0x%x\n", __LINE__, __FUNCTION__, (cpu_addr_t)p_aligned);
                 tos_mmheap_free(p_aligned);
+            }
+            if (info.used != 0)
+            {
+                printf("[%3d|%s] mmheap Memory leak\n", __LINE__, __FUNCTION__);
             }
             break;
 
